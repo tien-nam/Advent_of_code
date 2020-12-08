@@ -1,4 +1,4 @@
-const {count} = require('console');
+
 const fs = require('fs');
 const path = 'Day03-Toboggan_Trajectory/input.txt';
 
