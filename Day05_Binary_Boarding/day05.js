@@ -44,7 +44,7 @@ function findingYourSeat(seats){
         let index = fullList.indexOf(seat);
         fullList.splice(index,1);
     }
-    console.log(fullList)
+    console.log(fullList);
 }
 
 const seats = checkingPass(test);

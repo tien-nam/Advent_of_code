@@ -1,13 +1,19 @@
-const { count } = require("console")
+function avoidObstacles(nums) {
+  //  write code here.
+  let min = 1;
+  let a = nums.every(num => {
+    while(num %  min === 0){
+      min++;
+    }
+    return true;
+  })
 
-function countVowelConsonant(str) {
-    // write code here
-    const vowels = ['a','o' ,'u','i','e'];
-    str = str.toLowerCase();
-    return  str.split('').reduce((acc,char) => {
-        return vowels.includes(char) ? acc + 1: acc + 2;
-    },0);
-  }
+    console.log(min)
+  //console.log({ans,min});
+}
 
 
-countVowelConsonant('abcde');
+const nums = [4, 6, 8, 10, 12];
+
+avoidObstacles(nums);
+
